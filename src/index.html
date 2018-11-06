@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div id="title">
+        <h1>My To Do List</h1>
+        <input type="button" value="Add Task" id="addTask" onclick="callPopUp()">
+    </div>
+</header>
+<div id="popUp">
+    <div id="container">
+        <p>Enter task</p>
+        <label>
+            <p id="error"></p>
+            <input type="text" id="textField" autofocus><br>
+            <input type="button" value="Add" id="addField" onclick="addField()">
+        </label>
+    </div>
+</div>
+<div>
+    <ul id="tasks">
+
+    </ul>
+</div>
+<script src="js/script.js"></script>
+<script src="js/webSql.js"></script>
+</body>
+</html>

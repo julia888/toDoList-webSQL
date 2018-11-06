@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    background-color: #6bd2ff;
+    padding: 15px 40px;
+    font-size: 20px;
+    color: white;
+    list-style-type: none;
+}
+
+li:nth-child(2n) {
+    background-color: #9ce1ff;
+}
+
+li:hover {
+    background-color: #3196c3;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: darkblue;
+    position: relative;
+
+}
+
+ul {
+    margin: 0 50px;
+}
+
+.done::before {
+    content: '\2713';
+    display: inline-block;
+    color: darkblue;
+    padding: 0 6px 0 0;
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+.shutBtn {
+    float: right;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+}
+
+.hideField {
+    display: none;
+}
+
+#popUp {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #80808057;
+    display: none;
+    position: absolute;
+}
+
+#container {
+    height: 200px;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #34c0ff;
+    border-radius: 10px;
+    margin: auto;
+    background: white;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    color: #34c0ff;
+    font-size: 30px;
+}
+
+input[type = 'text'] {
+    height: 40px;
+    width: 300px;
+    border: 2px solid #34c0ff;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#container input[type = 'button'], #addTask {
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #34c0ff;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#error {
+    color: red;
+    font-size: 14px;
+}
+
+h1 {
+    color: #34c0ff;
+    font-size: 60px;
+    font-family: Andalus, serif;
+}
+
+#title {
+    padding: 20px 200px;
+    text-align: center;
+}
